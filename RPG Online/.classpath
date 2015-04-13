@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Server"/>
+	<classpathentry kind="src" path="Game"/>
+	<classpathentry kind="src" path="MapBuilder"/>
+	<classpathentry kind="src" path="Resources"/>
+	<classpathentry kind="src" path="Item"/>
+	<classpathentry kind="src" path="Menu"/>
+	<classpathentry kind="src" path="Player"/>
+	<classpathentry kind="src" path="Skills"/>
+	<classpathentry kind="src" path="Entities"/>
+	<classpathentry kind="src" path="Quests"/>
+	<classpathentry kind="src" path="Crafting"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

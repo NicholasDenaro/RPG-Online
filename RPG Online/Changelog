@@ -1,0 +1,83 @@
+v0.0.0.9 - 
+
+-Simple crafting added - order matters
+-Added Quest Menu
+//If there was any apple pie left, Mobibear ate it. -Krepo
+-Added Quests
+
+
+v0.0.0.8 - 9/20/13
+
+-Added function processing tags for dialog, and send messages to server to query functions.
+-Modified lighting, now uses image's color to determine color/alpha
+-Added actions for dialog, which use "tags" to perform actions
+-Skills are used on monsters that are in front of the player
+-Commented out Battle Stance, auto-gain ap
+
+
+v0.0.0.7 - 8/22/13
+
+-Added Dialog
+-Adding actions
+-Added ActionEntity interface
+-Adding NPCs
+-Added Particles and DamageParticle
+-Condensed skill.use() and created static damage calc
+-Experience and levels added
+-Equips add to stats(just do equipment.get"STAT"()).
+
+
+v0.0.0.6 - 8/16/13
+
+-updating UI
+-Fixed concurrent modification errors
+-Entities change depth according to ytrue
+-Can remove and change layers in Map Builder
+-removed SkillEffect, replaced with PlayerEffect(this removed chance)
+
+
+v0.0.0.5
+
+-added skill: Uppercut which stuns(preventing AP gain)
+-skills have effects
+-monsters have battle stance
+-added battle stance(channel for ap)
+-added GhostAction to fix the order of events
+
+
+v0.0.0.4
+
+-updated the map
+-modified server commands
+-modified Commands in Map Builder
+-added layers to zones
+-added layers to the map builder
+-fixed a problem with the server hanging because of a write error by putting try/catch in CustomOutputStream.flush() instead of throwing error
+-can equip items(no screen to view)
+
+
+v0.0.0.3
+
+-monster drops added
+-hunger requirements on food
+-health regeneration(vit)
+
+
+v0.0.0.2
+
+-simple enemy ai - only use first skill, and follow target
+-combat
+-added Skill list
+-adjusted darkness
+-Removed broken lighting
+
+
+v0.0.0.1
+
+-MonsterSpawner added
+-Commands added in zones
+
+
+v0.0.0.0
+
+-everything before

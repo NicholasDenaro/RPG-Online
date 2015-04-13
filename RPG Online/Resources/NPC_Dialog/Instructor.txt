@@ -1,0 +1,62 @@
+[tag=Root]
+{
+	Hello, I am the Instructor. How may I help you?[Actions=Help?<hasQuest(0)>{,Skill,}:{,}Heal,Quest]
+}
+[tag=Leave]
+{
+	Goodbye!
+}
+[tag=Help]
+{
+	If you continue East, you can fight slimes.
+	In order to attack you must have AP, this regenerates over time based on your stamina.
+	Remember, to target monsters, press V and press again to change target. Skills auto target monsters directly in front of you.
+	[goto=Leave]
+}
+[tag=Skill]
+{
+	Here is a basic attack you can use to fight.
+	You can find more skills by completing quests, or finding skill scrolls.[Skill=1]
+}
+[tag=Heal]
+{
+	Remember to be careful![Heal]
+}
+[tag=Quest]
+{
+	[?<isQuestDone(0)>{goto=NoQuest}:{?<hasQuest(0)>{?<canCompleteQuest(0)>{goto=FinishQuest0}:{goto=QuestInfo0}}:{goto=QuestAsk0}}]
+}
+[tag=NoQuest]
+{
+	There are currently no quests that I can give you.
+	Good luck on your adventures!
+	[goto=Leave]
+}
+[tag=QuestAsk0]
+{
+	It seems you are new to this land.
+	In order to help you begin your adventures, I am authorized to give you a quest.
+	The quest is to kill some slimes in the zone to the east.
+	What do you say?[Actions=Accept,Decline]
+}
+[tag=Accept]
+{
+	[?<startQuest(0)>{goto=QuestInfo0}:{goto=Leave}]
+}
+[tag=Decline]
+{
+	If you wish to accept later, you may do so.
+	[goto=Leave]
+}
+[tag=QuestInfo0]
+{
+	To complete the quest, kill 5 slimes and report back to me.
+	If you don't already have the <<Punch>> skill, talk to me about skills.
+	[goto=Leave]
+}
+[tag=FinishQuest0]
+{
+	It seems you were able to kill the slimes.
+	It probably wasn't too difficult to kill the slimes, but take this heal.[Heal]
+	[goto=Leave]
+}
